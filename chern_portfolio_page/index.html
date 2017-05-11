@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+
+  <div class="nav-header">
+    <div class="nav-brand">
+      <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/75992_699224290109701_1563394759_n.jpg">
+    </div>
+  <i class="fa fa-bars fa-3x"></i>
+      <div class="header-links">
+      <ul>
+        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+        <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+      </ul>
+      </div>
+   </div>
+        <!-- Code below creates the full screen nav panel -->
+
+
+<!-- sidebar slider -->
+<div class="nav-screen">
+  <i class="fa fa-times fa-3x"></i>
+  <div class="nav-container">
+    <div class="nav-links">
+      <ul id='myMenu'>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+        <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end navbar slider -->
+
+<!-- begin fullpage -->
+<div id="fullpage">
+
+  <!-- Section 1 // Header w/ type description jQuery animation -->
+  <div class="section aboutme" data-anchor="aboutme">
+    <div class="opaque-bg animated fadeInDown">
+      <h1 style="color:white">Cherrnor<span style="color:#FF6363">/</span>Malekani</h1>
+      <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+    </div>
+      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+  </div>
+  <!-- end section 1 -->
+
+  <!-- Section 2 // Biography creatively describing myself and ability meter used from CodePen -->
+
+  <div class="section2" data-anchor="skills">
+    <div class="content">
+      <h1 class="wow fadeInDown" data-wow-delay="0.2s">Hello</h1>
+      <p class="wow fadeInDown" data-wow-delay="0.2s">My name is Cherrnor, or "Chern" for short! I am a Los Angeles based UX/UI designer, focused on unique story-telling, responsive design and all things digital/tech related!</p>
+
+      <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+        <div class="skillbar clearfix " data-percent="90%">
+          <div class="skillbar-title html5" style="background: #DD1E2F;"><span>HTML5</span></div>
+          <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+          <div class="skill-bar-percent">90%</div>
+        </div> <!-- End Skill Bar HTML5 -->
+
+        <div class="skillbar clearfix " data-percent="80%">
+          <div class="skillbar-title css3" style="background: #EBB035;"><span>CSS3</span></div>
+          <div class="skillbar-bar" style="background: #EBB035;"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div> <!-- End Skill Bar CSS3 -->
+
+        <div class="skillbar clearfix " data-percent="75%">
+          <div class="skillbar-title" style="background: #218559;"><span>Photoshop</span></div>
+          <div class="skillbar-bar" style="background: #218559;"></div>
+          <div class="skill-bar-percent">75%</div>
+        </div> <!-- End Skill Bar Photo Editing -->
+
+        <div class="skillbar clearfix " data-percent="30%">
+          <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
+          <div class="skillbar-bar" style="background: #06A2CB;"></div>
+          <div class="skill-bar-percent">30%</div>
+        </div> <!-- End Skill Bar jQuery -->
+
+      </div>
+    </div>
+  </div>
+  <!-- end section 2-->
+
+  <!-- Section 3 // Display of CSS hover images of various other projects // Launch to other project pages -->
+
+  <!-- <div class="section" data-anchor="projects">
+    <div class="content-slide">
+        <div class="slide"> -->
+
+  <!-- end section -->
+
+  <!-- Section 4 // Contact Form to request service/proposal info for websites to be built -->
+
+  <div class="section" data-anchor="contact">
+    <div class="content wow fadeInDown" data-wow-delay="0.2s">
+      <h1>CONTACT ME</h1>
+        <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+        <br>
+      <div class="contact-form">
+
+        <div id="form-messages"></div>
+        <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+          <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s" >
+            <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s" >
+            <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+            <textarea data-minlength="10" class="form-control" id ="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="hidden">
+            <input type="text" class="form-control" id="human" name="human" placeholder="">
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="1s">
+            <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
+          </div>
+        </form>
+      <br>
+      </div>
+  </div>
+ </div>
+ <!-- end section -->
+
+  <!-- begin section -->
+
+  <div class="section fp-auto-height">
+    <div class="footer">
+      <p>CONNECT</p>
+      <div class="social-links">
+        <span><a href="http://linkedin.com/in/cherrnor-maju-malekani-13839a11a" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+        <span><a target="_blank" href="https://www.instagram.com/amanwithonename/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+      </div>
+    </div>
+  </div>
+  <!-- end section -->
+
+</div>
+<!-- end fullpage -->
+
+       <p>
+       </p>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+          $('.skillbar-title').addClass('loaded');
+        </script>
+    </body>
+</html>
