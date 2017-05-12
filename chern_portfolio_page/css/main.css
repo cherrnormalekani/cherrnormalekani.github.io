@@ -3,14 +3,14 @@
    Base styles:
    ========================================================================== */
 /* Fix to include padding and border in the total width for each element */
-/** {
+ /*{
   box-sizing: border-box;
-}
-
-/* Fix for responsive images */
-/*img {
-  max-width: 100%;
 }*/
+
+ /*Fix for responsive images */
+img {
+  max-width: 100%;
+}
 
 /* GLOBAL STYLES */
 
@@ -433,6 +433,11 @@ z-index: 500;
 
 .content-slide img {
   width: 70%;
+}
+
+#all {
+  display: flex;
+  justify-content: center;
 }
 
 /* portfolios styles  */
