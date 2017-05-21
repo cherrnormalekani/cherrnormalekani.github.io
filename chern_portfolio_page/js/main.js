@@ -1,5 +1,4 @@
 // Make it rain
-
 $(document).ready(function() {
 
   $('.skillbar-title').addClass('loaded');
@@ -24,7 +23,7 @@ $(document).ready(function() {
 
   // smooth scrolling
   $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -61,7 +60,7 @@ $(document).ready(function() {
         url: $(form).attr('action'),
         data: formData
       })
-      .done(function(response) {
+      .done(function( response ) {
         // Make sure that the formMessages div has the 'success' class.
         $(formMessages).removeClass('error');
         $(formMessages).addClass('success');
