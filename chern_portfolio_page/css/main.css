@@ -800,16 +800,12 @@ animation-play-state: running;
 }
 
 #form-div {
-	/*background-color:#3c3c3c;*/
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
 	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
-	margin-left: -260px;
+	margin: auto;
 }
 
 .feedback-input {
@@ -977,12 +973,12 @@ body {
   border: solid 1px;
 }
 
-.fa-facebook {
-  color: hsl(221, 44%, 41%);
-  border-color: hsl(221, 44%, 41%);
+.fa-linkedin {
+  color: #E8DBC7;
+  border-color: #E8DBC7;
 }
 
-.fa-facebook:hover {
+.fa-linkedin:hover {
   background-color: hsl(221, 44%, 41%);
 }
 
@@ -1004,16 +1000,7 @@ body {
   background-color: hsl(7, 71%, 55%);
 }
 
-.fa-linkedin {
-  color: hsl(199, 85%, 36%);
-  border-color: hsl(199, 85%, 36%);
-}
-
-.fa-linkedin:hover {
-  background-color: hsl(199, 85%, 36%);
-}
-
-.fa-facebook:hover, .fa-twitter:hover, .fa-instagram-plus:hover, .fa-linkedin:hover {
+.fa-twitter:hover, .fa-instagram-plus:hover, .fa-linkedin:hover {
   color: hsl(0, 0%, 100%);
 }
 
@@ -1025,7 +1012,6 @@ body {
   box-shadow: 1px 1px 3px hsla(0, 0%, 0%, .4);
 }
 
-.shadow .fa-facebook,
 .shadow .fa-twitter,
 .shadow .fa-instagram-plus,
 .shadow .fa-linkedin {
