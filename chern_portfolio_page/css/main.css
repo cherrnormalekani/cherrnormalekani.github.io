@@ -31,6 +31,7 @@ a {
 h1 {
   color: ##ce0404;
   font-weight: bold;
+  font-size: 40px;
 }
 
 p {
@@ -55,7 +56,29 @@ p {
   display: block;
 }
 
+.red {
+  color: #B22222;
+}
 
+.steelblue {
+  color: steelblue;
+}
+
+.gold {
+  color: #D4C600;
+}
+
+.darkkhaki {
+  color: #D7DF01;
+}
+
+.orangered {
+  color: orangered;
+}
+
+.olivedrab {
+  color: olivedrab;
+}
 /* flash alert styles */
 
 .flash-container {
@@ -528,136 +551,32 @@ body {
 
 /* about section */
 
-
-
-
 /* Skill bars */
-
-.container-skillbar {
-  width:100%;
-  padding-top:30px;
-  padding-right: 2%;
-  padding-left: 2%;
-  height:auto;
-  overflow:none;
-}
-.skillbar {
-  position:relative;
-  display:block;
-  margin-bottom:15px;
-  width:100%;
-  background:#efefef;
-  height:30px;
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  -webkit-transition:0.4s linear;
-  -moz-transition:0.4s linear;
-  -ms-transition:0.4s linear;
-  -o-transition:0.4s linear;
-  transition:0.4s linear;
-  -webkit-transition-property:width, background-color;
-  -moz-transition-property:width, background-color;
-  -ms-transition-property:width, background-color;
-  -o-transition-property:width, background-color;
-  transition-property:width, background-color;
+.row {
+  display: flex;
 }
 
-.skillbar-title {
-  position:absolute;
-  top:0;
-  left:0;
-  width:110px;
-  font-weight:bold;
-  font-size:13px;
-  color:#fff;
-  background:#6adcfa;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
+.sec-services {
+  background: #f9f9f9;
 }
 
-.skillbar-title span {
-  display:block;
-  background:rgba(0, 0, 0, 0.15);
-  padding:0 20px;
-  height:30px;
-  line-height:30px;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:3px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
+.sec-services i {
+  display: block;
+  margin: auto;
+  width: 45px;
 }
 
-.skillbar-bar {
-  height:30px;
-  width:0px;
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
+.sec-services .fa-paint-brush {
+  width: 64px;
 }
 
-.skill-bar-percent {
-  position:absolute;
-  right:10px;
-  top:0;
-  font-size:11px;
-  height:30px;
-  line-height:30px;
-  color:#ffffff;
-  color:rgba(0, 0, 0, 0.5);
+.sec-services .fa-code {
+  width: 68px;
 }
 
-.html5 {
-  animation: loading-bar 5s 1 ease-in-out forwards;
+.sec-services h2 {
+  margin: 1em 0;
 }
-
-.css3 {
-  animation: loading-bar2 5s 1 ease-in-out forwards;
-}
-
-.photoshop {
-  animation: loading-bar3 5s 1 ease-in-out forwards;
-}
-
-.JavaScript {
-  animation: loading-bar4 5s 1 ease-in-out forwards;
-}
-
-.DataAnalytics {
-  animation: loading-bar5 5s 1 ease-in-out forwards;
-}
-
-@keyframes loading-bar {
-  from { width: 110px; }
-  to { width: 90%;  }
-}
-
-@keyframes loading-bar2 {
-  from { width: 110px; }
-  to { width: 80%;  }
-}
-
-@keyframes loading-bar3 {
-  from { width: 110px; }
-  to { width: 75%;  }
-}
-
-@keyframes loading-bar4 {
-  from { width: 110px; }
-  to { width: 50%;  }
-}
-
-@keyframes loading-bar5 {
-  from { width: 110px; }
-  to { width: 90%;  }
-}
-
 /* portfolio section */
 
 .content {
