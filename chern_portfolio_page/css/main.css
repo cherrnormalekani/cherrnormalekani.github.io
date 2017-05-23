@@ -31,7 +31,12 @@ a {
 h1 {
   color: ##ce0404;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 p {
