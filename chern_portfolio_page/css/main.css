@@ -563,9 +563,14 @@ body {
 
 /* Skill bars */
 .row {
-  display: flex;
+  display: inline-flex;
+  /*flex-wrap: wrap;*/
+  /*width: 33%;*/
+  text-align: center;
 }
-
+.col-sm-4 {
+    width: 33%;
+}
 .sec-services {
   background: #f9f9f9;
 }
@@ -1131,4 +1136,10 @@ body {
     font-size: 28px;
   }
 
+}
+
+@media only screen and (max-width: 800px) {
+	.col-sm-4 {
+		width: 100%;
+	}
 }
